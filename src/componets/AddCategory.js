@@ -4,17 +4,14 @@ import PropTypes from 'prop-types';
 
 export const AddCategory = ({ setCategories }) => {
 
-    // const [inputValue, setInputValue] = useState(); //undefined
     const [inputValue, setInputValue] = useState(''); //empty string
 
     const handleInputChange = (e) => {
-        // console.log(e.target.value);
         setInputValue( e.target.value);
      }
 
      const handleSubmit = (e) => {
         e.preventDefault();
-        // setCategories( cats => [...cats, 'HunterXHunter']);
         if (inputValue.trim().length > 2) {
             setCategories( cats => [...cats, inputValue]);
             setInputValue('');
