@@ -2,6 +2,8 @@ import React from 'react'
 import { shallow} from 'enzyme'
 import { GifGridItem } from '../../componets/GifGridItem';
 
+//Para tirar un snapshoot nuevo presionar "U" en la linea de commando corriento el yarn run test 
+
 describe('Pruebas en <GifGridItem/> Component', () => {
 
 
