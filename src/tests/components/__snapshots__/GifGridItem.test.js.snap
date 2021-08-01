@@ -4,7 +4,12 @@ exports[`Pruebas en <GifGridItem/> Component Debe hacer algo 1`] = `
 <div
   className="card animate__animated animate__fadeIn"
 >
-  <img />
-  <p />
+  <img
+    alt="Hola soy Goku"
+    src="https://p325k7wa.twic.pics/high/dragon-ball/dragonball-project-z/00-page-setup/dbzk_banner_final.jpg?twic=v1/dpr=2/cover=4060x1380/step=10/quality=80"
+  />
+  <p>
+    Hola soy Goku
+  </p>
 </div>
 `;
