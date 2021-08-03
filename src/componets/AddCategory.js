@@ -18,6 +18,7 @@ export const AddCategory = ({ setCategories }) => {
         console.log('handleSubmit', inputValue);
         if (inputValue.trim().length > 2) {
             setCategories( cats => [inputValue, ...cats]);
+            // setCategories( 123654654); //probando que debe recibir cualquier tipo de function. 
             setInputValue('');
         }
      }
