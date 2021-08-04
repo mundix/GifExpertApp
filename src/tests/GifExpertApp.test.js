@@ -12,7 +12,7 @@ describe('Probando el app <GifExpertApp />', () => {
     });
 
     
-    test('Debe mostrar una lista de categorias', () => {
+    test('Debe mostrar una lista de categorias ', () => {
         
         const categories = ['One Punch', 'Dragon Ball'];
         const wrapper = shallow(<GifExpertApp defaultCategories={categories}/>);
