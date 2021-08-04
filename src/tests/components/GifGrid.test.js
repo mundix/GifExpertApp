@@ -32,6 +32,11 @@ describe('Pruebas en el archivo <GifGrid/>', () => {
               url: "https://localhost/img.jpg",
               title: "Title",
             },
+            {
+              id: "123",
+              url: "https://localhost/img.jpg",
+              title: "Title",
+            },
           ];
       
           useFetchGifs.mockReturnValue({
@@ -40,8 +45,11 @@ describe('Pruebas en el archivo <GifGrid/>', () => {
           });
 
         const wrapper =  shallow(<GifGrid category={category}/>);
-
+        
         expect(wrapper).toMatchSnapshot();
+        expect(wrapper.find('p').exists()).toBe(false);
+        expect(wrapper.find('GifGridItem').length).toBe(gifs.length);
+
 
     })
     
